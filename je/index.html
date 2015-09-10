@@ -31,7 +31,7 @@
                 <nav>
                     <ul>
                         <li class="active"><a href="#"><i class="fa fa-rss"></i> Blog</a></li>
-                        <li><a href="#"><i class="fa fa-male"></i> About</a></li>
+                        <li><a href="#"><i class="fa fa-black-tie"></i> About</a></li>
                         <li><a href="#"><i class="fa fa-code-fork"></i> Projects</a></li>
                     </ul>
                 </nav>
@@ -39,11 +39,12 @@
         </div>
 
         <div class="main-container">
-            <h1 class="subhead"><i class="fa fa-rss-square"></i> blog</h1>
+            <h1 class="subhead">blog <i class="fa fa-rss"></i></h1>
             <div class="main wrapper clearfix">
                 <article>
                     <header>
-                        <h1>article <small>January 1, 2016</small></h1>
+                    <a href="#share" title="Share Article" class="btn btn-small right"><i class="fa fa-share-alt"></i> Share</a>
+                        <h1>article article article article<small>January 1, 2016</small></h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
                     </header>
                     <section>
@@ -58,14 +59,35 @@
                         <h3>article footer h3</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor.</p>
                     </footer>
-                    <p class="author">By <a href="#">Donald</a></p>
+                    <p class="author">Author:</p>
+                    <div class="author-info">
+                        <a href="#contact" title="Contact"><span class="author-pic" title="Donald Jones Profile Pic"></span>
+                        <span>Donald Jones</span></a>
+                    </div>
+                    <div class="article-footer clearfix">
+                        <p class="interesting">Did you find this article interesting? 
+                        <a href="#yes" title="Yes" class="btn btn-success"><i class="fa fa-thumbs-up"></i></a>
+                        <a href="#no" title="No" class="btn btn-failure"><i class="fa fa-thumbs-down"></i></a>
+                        </p> 
+                        <span class="previous">
+                            <a href="#" title="Previous"><i class="fa fa-arrow-circle-left"></i> Previous</a>
+                        </span>
+                        <span class="next">
+                             <a href="#" title="Next">Next <i class="fa fa-arrow-circle-right"></i></a>
+                        </span>
+                    </div>
                 </article>
 
                 <aside>
+                    <a href="#contact" title="Contact"><i class="fa fa-envelope"></i></a>
                     <a href="#github" title="Github"><i class="fa fa-github-square"></i></a>
                     <a href="#linkedin" title="LinkedIn"><i class="fa fa-linkedin-square"></i></a>
                     <a href="#twitter" title="twitter"><i class="fa fa-twitter-square"></i></a>
                     <a href="#googleplus" title="Google Plus"><i class="fa fa-google-plus-square"></i></a>                
+
+                    <form>
+                        <input type="text" name="search" id="search" placeholder="Search Posts" />
+                    </form>
                     <h3>Recent Posts</h3>
                     <ul>
                         <li><small>01/01/16</small> <a href="#">A new post will appear here.</a></li>
@@ -79,6 +101,7 @@
         <div class="footer-container">
             <footer class="wrapper">
             <p>
+                <a href="#contact" title="Contact"><i class="fa fa-envelope"></i></a>
                 <a href="#github" title="Github"><i class="fa fa-github-square"></i></a>
                 <a href="#linkedin" title="LinkedIn"><i class="fa fa-linkedin-square"></i></a>
                 <a href="#twitter" title="twitter"><i class="fa fa-twitter-square"></i></a>

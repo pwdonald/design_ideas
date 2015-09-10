@@ -168,11 +168,20 @@ html, body {
     text-decoration: none;
 }
 
+footer:hover {
+    cursor: default;
+}
+
 .subhead {
     background: rgb(230, 240, 245);
     margin: 0;
     padding: 1em;
     font-weight: lighter;
+    text-align: center;
+}
+
+.subhead:hover {
+    cursor: default;
 }
 
 .footer-container,
@@ -217,22 +226,88 @@ footer h3 {
     text-align: center;
 }
 
+.interesting {
+    text-align: center;
+    margin: 1em 0;
+}
+
+.btn {
+    border-radius: 5%;
+    padding: .5em 1em;
+    border: 1px solid #aaa;
+    background: transparent;
+    color: #aaa;
+    text-decoration: none;
+
+    -webkit-transition: background-color .5s ease-out;
+    -moz-transition: background-color .5s ease-out;
+    -o-transition: background-color .5s ease-out;
+    transition: background-color .5s ease-out;
+}
+
+.btn-small {
+    padding: .25em .5em;
+    font-size: .75em;
+}
+
+.right {
+    float: right;
+}
+
+.btn:hover {
+    color: white;
+    background: rgb(40,133,217);
+}
+
+.btn.active {
+    color: white;
+    background: rgb(40,133,217);   
+}
+
+.btn-success {
+    border: 1px solid rgb(0, 255, 0);
+    color: rgb(0, 255, 0);
+}
+
+.btn-success:hover {
+    color: black;
+    background-color: rgb(0, 242, 0);
+}
+
+.btn-success.active {
+    color: black;
+    background-color: rgb(0, 242, 0);   
+}
+
+.btn-failure {
+    border: 1px solid red;
+    color: red;
+}
+
+.btn-failure:hover {
+    background-color: red;
+}
+
+.btn-failure.active {
+    background-color: red;
+}
+
+.interesting .btn {
+    padding: .25em .5em;
+}
+
 nav li.active a {
     background: rgb(40,133,217);
     color: white;
 }
 
-nav li a:hover {
-    background: rgb(40,133,217);
-}
-
 nav li a {
-    border-radius: 10px;
+    border-radius: 5%;
     display: block;
     margin-top: 1em;
     margin-bottom: 1em;
     padding: .5em .25em;
-    font-weight: normal;
+    font-weight: lighter;
 
     text-align: center;
     text-decoration: none;
@@ -251,15 +326,17 @@ nav a:visited {
 }
 
 nav a:hover {
+    background: rgb(40,133,217);
     color: white;
-}
-
-nav a:hover {
     text-decoration: none
 }
 
 .main aside {
     border-top: 0;
+}
+
+.main aside form {
+    margin-top: 10px;
 }
 
 article {
@@ -285,6 +362,42 @@ article h1 small {
 article p {
     padding: 0;
     margin: 5px 2px;
+}
+
+.article-footer {
+    margin-top: 2%;
+    border-top: 1px dotted #aaa;
+}
+
+.main article .previous a,
+.main article .next a {
+    text-decoration: none;
+    color: #aaa;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+}
+
+.main article .previous a:hover,
+.main article .next a:hover {
+    color: black;
+    padding-bottom: 2px;
+    border-bottom: 1px solid black;
+}
+
+.main article .previous,
+.main article .next {
+    margin-top: 1%;
+    width: 50%;
+}
+
+.main article .previous {
+    float: left;
+    text-align: left;
+}
+
+.main article .next {
+    float: right;
+    text-align: right;
 }
 
 .author {
@@ -371,6 +484,49 @@ article p {
     color: black;
 }
 
+.subhead i {
+    position: absolute;
+    margin-top: 1em;
+    margin-left: -1.65em;
+    width: 1em;
+    padding: .3em;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.author-info {
+    padding: .5em;
+    background: rgb(230, 240, 245);
+}
+
+.author-info span {
+    vertical-align: middle;
+    font-size: 1.1em;
+}
+
+.author-info a {
+    vertical-align: middle;
+    border-radius: 0;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.author-info a:hover {
+    color: #aaa;
+}
+
+.author-pic {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: center -5px;
+    background-image: url('https://avatars1.githubusercontent.com/u/285609?v=3&s=460');
+}
+
 @media only screen and (min-width: 480px) {
     .title {
         text-align: center;
@@ -431,7 +587,7 @@ article p {
 
     .main aside i {
         visibility: visible;
-    }
+    } 
 }
 
 @media only screen and (min-width: 1140px) {
